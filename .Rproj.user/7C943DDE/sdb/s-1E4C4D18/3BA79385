@@ -1,0 +1,16 @@
+{
+    "contents" : "Git & GitHub in research writing\n==============\ncss: ../../template/rpresentation/slides.css\ntransition: fade\ntransition-speed: fast\n\nDigicoffee </br>\nJanuary 22, 2014\n\n<a href=\"http://markuskainu.fi\">Markus Kainu</a></br>\n*PhD student* </br>\n[Aleksanteri institute, University of Helsinki](http://helsinki.fi/aleksanteri) </br>\n\nSlides: [github.com/muuankarski/xx](github.com/muuankarski/xx)\n\n\n<!-- ---| notes begin |--------------------------------\n\n---------| notes end |-----------------------------  --> \n\n\nContent\n==================\n\n![http://git-scm.com/](https://www.scm-manager.com/wp-content/uploads/2013/04/git-logo.png)\n\n\n\nbigtitle\n========================================================\ntitle: false\n<h1>G</h1>\n\n\n======================\n<iframe width=\"853\" height=\"480\" src=\"//www.youtube.com/embed/l_T3XEgXl14\" frameborder=\"0\" allowfullscreen></iframe>\n\n<!-- ---| notes begin |--------------------------------\n\n\n---------| notes end |-----------------------------  --> \n \n",
+    "created" : 1390227637616.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4294944091",
+    "id" : "3BA79385",
+    "lastKnownWriteTime" : 1390228409,
+    "path" : "~/workspace/github/git-clinic/slides.Rpres",
+    "project_path" : "slides.Rpres",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_presentation"
+}
