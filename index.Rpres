@@ -4,6 +4,7 @@ css: ../../template/rpresentation/slides.css
 transition: fade
 transition-speed: fast
 
+
 Digicoffee </br>
 January 22, 2014
 
@@ -22,7 +23,8 @@ January 22, 2014
 
 Introduction
 ==================
-incremental:FALSE
+incremental:true
+
 
 <a href="http://git-scm.com/">
 <img src="http://git-scm.com/images/logos/1color-orange-lightbg@2x.png" width="370px"></img></a>
@@ -46,6 +48,7 @@ incremental:FALSE
     - pull request & issues with comment flows
     - visualising the project history & committing
     - publishing through GitHub-pages
+
 
 
 Today
