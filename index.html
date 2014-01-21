@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Git & GitHub in research writing & everything</title>
+  <title>Git & GitHub for creating, collaborating and sharing</title>
     
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -838,6 +838,147 @@ body {
 }
 
 
+/*********************************
+* fork me ribbob
+*******/
+
+/* Left will inherit from right (so we don't need to duplicate code) */
+.github-fork-ribbon {
+  /* The right and left classes determine the side we attach our banner to */
+  position: absolute;
+
+  /* Add a bit of padding to give some substance outside the "stitching" */
+  padding: 2px 0;
+
+  /* Set the base colour */
+  background-color: #a00;
+
+  /* Set a gradient: transparent black at the top to almost-transparent black at the bottom */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.15)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));
+
+  /* Add a drop shadow */
+  -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+.github-fork-ribbon a,
+.github-fork-ribbon a:hover {
+  /* Set the font */
+  font: 700 13px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+
+  /* Set the text properties */
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+
+  /* Set the geometry. If you fiddle with these you'll also need
+     to tweak the top and right values in .github-fork-ribbon. */
+  width: 200px;
+  line-height: 20px;
+
+  /* Set the layout properties */
+  display: inline-block;
+  padding: 2px 0;
+
+  /* Add "stitching" effect */
+  border-width: 1px 0;
+  border-style: dotted;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.github-fork-ribbon-wrapper {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.github-fork-ribbon-wrapper.fixed {
+  position: fixed;
+}
+
+.github-fork-ribbon-wrapper.left {
+  left: 0;
+}
+
+.github-fork-ribbon-wrapper.right {
+  right: 0;
+}
+
+.github-fork-ribbon-wrapper.left-bottom {
+  position: fixed;
+  top: inherit;
+  bottom: 0;
+  left: 0;
+}
+
+.github-fork-ribbon-wrapper.right-bottom {
+  position: fixed;
+  top: inherit;
+  bottom: 0;
+  right: 0;
+}
+
+.github-fork-ribbon-wrapper.right .github-fork-ribbon {
+  top: 42px;
+  right: -43px;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.github-fork-ribbon-wrapper.left .github-fork-ribbon {
+  top: 42px;
+  left: -43px;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+.github-fork-ribbon-wrapper.left-bottom .github-fork-ribbon {
+  top: 80px;
+  left: -43px;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.github-fork-ribbon-wrapper.right-bottom .github-fork-ribbon {
+  top: 80px;
+  right: -43px;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
   </style>
   
   <!-- reveal print css -->
@@ -1061,17 +1202,20 @@ hljs.initHighlightingOnLoad();
   <div class="slides">
 
 <section data-state="section" data-transition="fade" data-transition-speed="fast">
-<h1>Git &amp; GitHub in research writing &amp; everything</h1><p></p>
+<h1>Git &amp; GitHub for creating, collaborating and sharing</h1><p></p>
 
 <div class="slideContent" >
 <p>Digicoffee </br>
 January 22, 2014</p>
 
-<p><a href="http://markuskainu.fi">Markus Kainu</a></br>
-<em>PhD student</em> </br>
-<a href="http://helsinki.fi/aleksanteri">Aleksanteri institute, University of Helsinki</a> </br></p>
+<div class="github-fork-ribbon-wrapper right">
+<div class="github-fork-ribbon">
+<a href="https://github.com/muuankarski/git" style="color:white;">Fork me on GitHub</a>
+</div>
 
-<p>Slides: <a href="github.com/muuankarski/xx">github.com/muuankarski/xx</a></p>
+<p></div></p>
+
+<p><a href="http://markuskainu.fi">Markus Kainu</a></br></p>
 
 <!-- ---| notes begin |--------------------------------
 
@@ -1081,16 +1225,60 @@ January 22, 2014</p>
 
 </section>
 <section data-transition="fade" data-transition-speed="fast">
-
-<div class="slideContent noTitle" >
+<h3>Introduction</h3>
+<div class="column column1 slideContent" >
 <p><a href="http://git-scm.com/">
-<img src="http://git-scm.com/images/logos/1color-orange-lightbg@2x.png" width="350px"></img></a></p>
+<img src="http://git-scm.com/images/logos/1color-orange-lightbg@2x.png" width="370px"></img></a></p>
+
+<ul>
+<li>Git is a free and open source distributed version/revision control system</li>
+<li>Written by <a href="https://github.com/torvalds">Linus Torvalds</a> in 2005 for linux kernel development</li>
+</ul>
+
+<blockquote>
+<p>I&#39;m an egotistical bastard, and I name all my projects after myself. First Linux, now <a href="http://www.urbandictionary.com/define.php?term=git">git</a>.</p>
+</blockquote>
+
+<ul>
+<li>used widely in open source and proprietary software deveplopment</li>
+</ul>
+
+
+</div>
+
+<div class="column column2 slideContent" >
+
 
 <p><a href="http://github.com">
-<img src="http://wptavern.com/wp-content/uploads/2013/10/github-logo.png" width="350px"></img></a></p>
+<img src="http://wptavern.com/wp-content/uploads/2013/10/github-logo.png" width="330px"></img></a></p>
 
-<p><a href="http://www.youtube.com/embed/l_T3XEgXl14">
-<img src="http://upload.wikimedia.org/wikipedia/commons/9/93/Solid_color_You_Tube_logo.png" width="350px"></img></a></p>
+<ul>
+<li>GitHub is a web-based hosting service for software development projects that use the Git revision control system</li>
+<li>offers both paid plans for private repositories, and free accounts for open source projects.</li>
+<li>besides core git functionalities if provides a whole ecosystem with:
+
+<ul>
+<li>browser based workflow</li>
+<li>pull request &amp; issues</li>
+<li>nice visualising</li>
+<li>publishing everything through GitHub-pages</li>
+</ul></li>
+</ul>
+
+</div>
+
+</section>
+<section data-transition="fade" data-transition-speed="fast">
+<h3>Today</h3>
+<div class="slideContent" >
+<p>we will learn git through GitHub</p>
+
+<ol>
+<li class="fragment">we will use the web workflow to collaborate on paper &amp; presentation</li>
+<li class="fragment">we will create personal website at <code>youraccount.github.io</code></li>
+<li class="fragment">we will try github GUI&#39;s on our laptos</li>
+<li class="fragment">I will show how the command line works (how it is planned to be used)</li>
+</ol>
 
 </div>
 
@@ -1113,11 +1301,26 @@ January 22, 2014</p>
 </section>
 <section data-transition="fade" data-transition-speed="fast">
 
+<div class="mediaOnly slideContent noTitle" >
+<p><img src="http://www.phdcomics.com/comics/archive/phd101212s.gif" alt=""/></p>
+
+</div>
+
+</section>
+<section data-transition="fade" data-transition-speed="fast">
+
+<div class="slideContent noTitle" >
+
+</div>
+
+</section>
+<section data-transition="fade" data-transition-speed="fast">
+
 <div class="slideContent noTitle" >
 <ul>
-<li class="fragment">Who did what</li>
-<li class="fragment">Who did what, when</li>
-<li class="fragment">Who did what, when and why</li>
+<li>Who added/removed what</li>
+<li>Who added/removed what, when</li>
+<li>Who added/removed what, when and why</li>
 </ul>
 
 </div>
