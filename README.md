@@ -1,4 +1,4 @@
 Git & github clinic for academic writers
 ==========
 
-Slides at [muuankarski.github.io/git]()
+Slides at [muuankarski.github.io/git](http://muuankarski.github.io/git/)

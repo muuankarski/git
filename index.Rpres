@@ -1,4 +1,4 @@
-Git & GitHub for creating, collaborating and sharing
+Git & GitHub for creating, collaborating and sharing born-digital content
 ==============
 css: ../../template/rpresentation/slides.css
 transition: fade
@@ -43,9 +43,9 @@ incremental:FALSE
 - offers both paid plans for private repositories, and free accounts for open source projects.
 - besides core git functionalities if provides a whole ecosystem with:
     - browser based workflow
-    - pull request & issues
-    - nice visualising
-    - publishing everything through GitHub-pages
+    - pull request & issues with comment flows
+    - visualising the project history & committing
+    - publishing through GitHub-pages
 
 
 Today
@@ -59,34 +59,14 @@ we will learn git through GitHub
 4. I will show how the command line works (how it is planned to be used)
 
 ===========
-<h1>Why??</h1>
-
-===========
-<h1>1. version control</h1>
+<h1>Why Version control?</h1>
 
 ===========
 
 ![](http://www.phdcomics.com/comics/archive/phd101212s.gif)
 
 
-===========
+==========
 
-
-
-===========
-incremental:FALSE
-- Who added/removed what
-- Who added/removed what, when
-- Who added/removed what, when and why
-
-Cases
-===========
-- [A textbook on informal homotopy type theory](https://github.com/HoTT/book)
-
-
-
-<!-- ---| notes begin |--------------------------------
-
-
----------| notes end |-----------------------------  --> 
- 
+[https://github.com/digieast/digicoffee](https://github.com/digieast/digicoffee)
+----------
