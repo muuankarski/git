@@ -1,9 +1,8 @@
-Git & GitHub for creating, collaborating and sharing born-digital content
+Git version control & GitHub hosting service in creating and sharing born-digital content
 ==============
 css: ../../template/rpresentation/slides.css
 transition: fade
 transition-speed: fast
-
 
 Digicoffee </br>
 January 22, 2014
@@ -21,7 +20,41 @@ January 22, 2014
 
 ---------| notes end |-----------------------------  --> 
 
-Introduction
+===========
+<h1>Why Version control?</h1>
+
+===========
+
+![](http://www.phdcomics.com/comics/archive/phd101212s.gif)
+
+
+===========
+incremental:true
+1. To keep track on your own work
+----------------
+- temporal structure of your texts
+- reasoning behind decisions
+
+2. To facilitate collaboration
+----------------
+- brave new world of collaboration
+- efficient on/off-line
+
+===============
+<h1>Why host project in the web?</h1>
+
+===========
+incremental:true
+1. Facilitate collaboration
+----------------
+- keep yourself and others on track on what is going
+- keep track on who did (or did NOT) what, when and why
+
+2. Publish
+----------------
+- your texts, slides, videos, software
+
+Todays tech
 ==================
 incremental:true
 
@@ -43,12 +76,11 @@ incremental:true
 
 - GitHub is a web-based hosting service for software development projects that use the Git revision control system
 - offers both paid plans for private repositories, and free accounts for open source projects.
-- besides core git functionalities if provides a whole ecosystem with:
+- besides core git functionalities it provides a whole ecosystem with:
     - browser based workflow
     - pull request & issues with comment flows
     - visualising the project history & committing
     - publishing through GitHub-pages
-
 
 
 Today
@@ -60,13 +92,6 @@ we will learn git through GitHub
 2. we will create personal website at `youraccount.github.io`
 3. we will try github GUI's on our laptos
 4. I will show how the command line works (how it is planned to be used)
-
-===========
-<h1>Why Version control?</h1>
-
-===========
-
-![](http://www.phdcomics.com/comics/archive/phd101212s.gif)
 
 
 ==========
